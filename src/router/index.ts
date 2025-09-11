@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import VocabList from '../views/VocabularyList.vue'
+import Lessons from '../views/Lessons.vue'
 import Quiz from '../views/VocabularyQuiz.vue'
 
 const router = createRouter({
@@ -20,6 +21,11 @@ const router = createRouter({
       path: '/vocabulary/:opt/:word/:page',
       name: 'vocabulary-level',
       component: VocabList
+    },
+    {
+      path: '/lessons',
+      name: 'lessons-level',
+      component: Lessons
     },
     /* {
       path: '/quiz/',
